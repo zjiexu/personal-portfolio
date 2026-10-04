@@ -61,6 +61,42 @@
   min-width: 0;
 }
 
+.page-banner {
+  min-height: 320px;
+  display: grid;
+  align-content: center;
+  padding: 96px 48px 72px;
+  border-bottom: 1px solid rgba(242, 239, 232, 0.1);
+  background:
+    linear-gradient(rgba(8, 8, 8, 0.34), rgba(8, 8, 8, 0.86)),
+    radial-gradient(circle at 70% 35%, rgba(181, 155, 106, 0.16), transparent 28rem),
+    #11100d;
+}
+
+.page-banner-label {
+  margin: 0 0 14px;
+  color: #b59b6a;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.page-banner h1 {
+  margin: 0;
+  font-size: 4.6rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.page-banner p:last-child {
+  max-width: 680px;
+  margin: 24px 0 0;
+  color: #d8d1c6;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
 .intro-section {
   min-height: 100vh;
   display: grid;
@@ -429,6 +465,15 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 14px 18px;
+  }
+
+  .page-banner {
+    min-height: 260px;
+    padding: 64px 24px 56px;
+  }
+
+  .page-banner h1 {
+    font-size: 3rem;
   }
 
   .intro-section {

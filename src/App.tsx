@@ -3,6 +3,7 @@ import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 import IntroSection from './components/IntroSection'
 import LearningSection from './components/LearningSection'
+import PageBanner from './components/PageBanner'
 import ProjectsSection from './components/ProjectsSection'
 import Sidebar from './components/Sidebar'
 import { contactLinks, learningAreas, projects } from './data'
@@ -14,6 +15,7 @@ function App() {
       <Sidebar />
 
       <div className="page-content">
+        <PageBanner />
         <IntroSection />
         <AboutSection />
         <ProjectsSection projects={projects} />
