@@ -2,7 +2,7 @@ function Header() {
   return (
     <header className="site-header">
       <a className="site-name" href="#top">
-        Jynx
+        Zhijie Xu
       </a>
 
       <nav className="site-nav" aria-label="Main navigation">

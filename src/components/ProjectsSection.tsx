@@ -13,7 +13,7 @@ function ProjectsSection({ projects }: ProjectsSectionProps) {
     <section className="content-section" id="projects">
       <div className="section-heading">
         <p className="section-label">Projects</p>
-        <h2>Selected Work</h2>
+        <h2>Project Work</h2>
       </div>
 
       <div className="project-list">

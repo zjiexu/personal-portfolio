@@ -45,7 +45,7 @@ export const learningAreas: LearningArea[] = [
 export const projects: Project[] = [
   {
     type: 'Portfolio Website',
-    title: 'Jynx',
+    title: 'Personal Portfolio',
     status: 'In Progress',
     description:
       'A personal developer portfolio built to practice frontend structure, responsive design, version control, and GitHub Pages deployment.',
@@ -55,11 +55,11 @@ export const projects: Project[] = [
     links: [
       {
         label: 'GitHub',
-        url: 'https://github.com/zjiexu/jynx',
+        url: 'https://github.com/zjiexu/personal-portfolio',
       },
       {
         label: 'Live Site',
-        url: 'https://zjiexu.github.io/jynx/',
+        url: 'https://zjiexu.github.io/personal-portfolio/',
       },
     ],
   },

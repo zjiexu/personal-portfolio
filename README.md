@@ -1,14 +1,14 @@
-# Jynx
+# Personal Portfolio
 
 Personal developer portfolio website.
 
 ## Overview
 
-Jynx is a personal portfolio website built to present my software development projects, current learning progress, and contact information. The project is also used to practice React components, typed data, responsive layout, and GitHub Pages deployment.
+Personal Portfolio is a personal portfolio website built to present my software development projects, current learning progress, and contact information.
 
 ## Live Site
 
-https://zjiexu.github.io/jynx/
+https://zjiexu.github.io/personal-portfolio/
 
 ## Tech Stack
 
