@@ -65,6 +65,15 @@
   margin: 0;
 }
 
+.landing-footer a {
+  color: var(--color-text-soft);
+  text-decoration: none;
+}
+
+.landing-footer a:hover {
+  color: var(--color-accent);
+}
+
 .site-shell {
   min-height: 100vh;
   display: grid;
@@ -115,9 +124,17 @@
 }
 
 .site-nav a {
+  padding: 10px 12px;
+  border: 1px solid transparent;
   color: var(--color-text-muted);
   font-size: 0.9rem;
   text-decoration: none;
+}
+
+.site-nav a.active {
+  border-color: var(--color-accent);
+  color: var(--color-text);
+  background: rgba(200, 169, 106, 0.16);
 }
 
 .site-nav a:hover {

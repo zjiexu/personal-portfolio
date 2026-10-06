@@ -1,8 +1,13 @@
-function Sidebar() {
+type SidebarProps = {
+  activeSection: string
+  onNavigate: (title: string) => void
+}
+
+function Sidebar({ activeSection, onNavigate }: SidebarProps) {
   return (
     <aside className="site-sidebar">
       <div>
-        <a className="site-name" href="#top">
+        <a className="site-name" href="#top" onClick={() => onNavigate('Home')}>
           Zhijie Xu
         </a>
 
@@ -10,10 +15,41 @@ function Sidebar() {
       </div>
 
       <nav className="site-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a
+          className={activeSection === 'Home' ? 'active' : ''}
+          href="#top"
+          onClick={() => onNavigate('Home')}
+        >
+          Home
+        </a>
+        <a
+          className={activeSection === 'About' ? 'active' : ''}
+          href="#about"
+          onClick={() => onNavigate('About')}
+        >
+          About
+        </a>
+        <a
+          className={activeSection === 'Projects' ? 'active' : ''}
+          href="#projects"
+          onClick={() => onNavigate('Projects')}
+        >
+          Projects
+        </a>
+        <a
+          className={activeSection === 'Skills' ? 'active' : ''}
+          href="#skills"
+          onClick={() => onNavigate('Skills')}
+        >
+          Skills
+        </a>
+        <a
+          className={activeSection === 'Contact' ? 'active' : ''}
+          href="#contact"
+          onClick={() => onNavigate('Contact')}
+        >
+          Contact
+        </a>
       </nav>
 
       <p className="sidebar-note">Personal Portfolio</p>

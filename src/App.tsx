@@ -13,19 +13,27 @@ import './App.css'
 
 function App() {
   const [currentPage, setCurrentPage] = useState<'landing' | 'portfolio'>('landing')
+  const [portfolioTitle, setPortfolioTitle] = useState('Home')
 
   useEffect(() => {
     document.title =
-      currentPage === 'landing' ? 'Portfolio | Portfolio' : 'Home | Portfolio'
-  }, [currentPage])
+      currentPage === 'landing' ? 'Portfolio | Portfolio' : `${portfolioTitle} | Portfolio`
+  }, [currentPage, portfolioTitle])
 
   if (currentPage === 'landing') {
-    return <LandingPage onViewPortfolio={() => setCurrentPage('portfolio')} />
+    return (
+      <LandingPage
+        onViewPortfolio={() => {
+          setPortfolioTitle('Home')
+          setCurrentPage('portfolio')
+        }}
+      />
+    )
   }
 
   return (
     <main className="site-shell" id="top">
-      <Sidebar />
+      <Sidebar activeSection={portfolioTitle} onNavigate={setPortfolioTitle} />
 
       <div className="page-content">
         <PageBanner />

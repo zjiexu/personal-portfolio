@@ -35,12 +35,15 @@ https://zjiexu.github.io/personal-portfolio/
 ```text
 src/
   components/
+    AboutSection.tsx
     ContactSection.tsx
     Footer.tsx
-    Header.tsx
     IntroSection.tsx
+    LandingPage.tsx
     LearningSection.tsx
+    PageBanner.tsx
     ProjectsSection.tsx
+    Sidebar.tsx
   App.tsx
   App.css
   data.ts
@@ -48,7 +51,7 @@ src/
   main.tsx
 ```
 
-- `src/App.tsx` composes the main page sections.
+- `src/App.tsx` controls the landing view, portfolio view, page title, and main page sections.
 - `src/components/` contains reusable UI sections.
 - `src/data.ts` stores typed portfolio content used by the page.
 

@@ -24,7 +24,9 @@ function LandingPage({ onViewPortfolio }: LandingPageProps) {
       </div>
 
       <footer className="landing-footer">
-        <p>GitHub</p>
+        <a href="https://github.com/zjiexu" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
         <p>© 2026, Zhijie Xu</p>
       </footer>
     </section>
