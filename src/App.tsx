@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react'
+import LandingPage from './components/LandingPage'
 import AboutSection from './components/AboutSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
@@ -10,6 +12,17 @@ import { contactLinks, learningAreas, projects } from './data'
 import './App.css'
 
 function App() {
+  const [currentPage, setCurrentPage] = useState<'landing' | 'portfolio'>('landing')
+
+  useEffect(() => {
+    document.title =
+      currentPage === 'landing' ? 'Portfolio | Portfolio' : 'Home | Portfolio'
+  }, [currentPage])
+
+  if (currentPage === 'landing') {
+    return <LandingPage onViewPortfolio={() => setCurrentPage('portfolio')} />
+  }
+
   return (
     <main className="site-shell" id="top">
       <Sidebar />
