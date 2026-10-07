@@ -2,9 +2,9 @@
 
 Personal developer portfolio website.
 
-## Overview
+## Current Scope
 
-Personal Portfolio is a personal portfolio website built to present my software development projects, current learning progress, and contact information.
+This project currently contains a landing page for my personal developer portfolio. The rest of the portfolio will be rebuilt step by step.
 
 ## Live Site
 
@@ -18,64 +18,32 @@ https://zjiexu.github.io/personal-portfolio/
 - CSS
 - GitHub Pages
 
-## Features
-
-- Responsive portfolio homepage with desktop and mobile layouts
-- Mobile navigation that wraps cleanly on small screens
-- Component-based React structure
-- Typed portfolio data with TypeScript
-- About, project, learning, and contact sections
-- Project cards with tools, links, status labels, and key learning notes
-- Planned project roadmap entry for future portfolio growth
-- Dark minimalist visual design with subtle interaction states
-- GitHub Pages deployment
-
 ## Project Structure
 
 ```text
 src/
   components/
-    AboutSection.tsx
-    ContactSection.tsx
-    Footer.tsx
-    IntroSection.tsx
     LandingPage.tsx
-    LearningSection.tsx
-    PageBanner.tsx
-    ProjectsSection.tsx
-    Sidebar.tsx
   App.tsx
   App.css
-  data.ts
   index.css
   main.tsx
 ```
 
-- `src/App.tsx` controls the landing view, portfolio view, page title, and main page sections.
-- `src/components/` contains reusable UI sections.
-- `src/data.ts` stores typed portfolio content used by the page.
-
 ## Getting Started
-
-Install dependencies:
 
 ```bash
 npm install
-```
-
-Start the development server:
-
-```bash
 npm run dev
 ```
 
-Build for production:
+## Build
 
 ```bash
 npm run build
 ```
 
-Deploy to GitHub Pages:
+## Deploy
 
 ```bash
 npm run deploy

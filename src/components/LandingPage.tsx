@@ -1,35 +1,32 @@
-type LandingPageProps = {
-  onViewPortfolio: () => void
-}
+import { profile } from '../profile'
+import CopyrightNotice from './CopyrightNotice'
+import ProfileAvatar from './ProfileAvatar'
+import SocialLinks from './SocialLinks'
 
-function LandingPage({ onViewPortfolio }: LandingPageProps) {
+function LandingPage() {
   return (
-    <section className="landing-page">
-      <div className="landing-content">
-        <p className="landing-label">Software Developer</p>
+    <main className="landing-page">
+      <section className="landing-content" aria-label="Portfolio introduction">
+        <ProfileAvatar />
 
-        <h1>Zhijie Xu</h1>
+        <h1>{profile.name}</h1>
 
-        <p className="landing-location">United States / Remote</p>
+        <p className="landing-location">{profile.location}</p>
 
-        <h2>Personal Portfolio</h2>
+        <h2>{profile.role}</h2>
 
-        <p className="landing-description">
-          Building practical software projects while developing a stronger foundation in frontend development, software engineering, and technical problem solving.
-        </p>
+        <p className="landing-description">{profile.description}</p>
 
-        <button className="button primary" type="button" onClick={onViewPortfolio}>
+        <button className="landing-button" type="button">
           View Portfolio
         </button>
-      </div>
+      </section>
 
       <footer className="landing-footer">
-        <a href="https://github.com/zjiexu" target="_blank" rel="noreferrer">
-          GitHub
-        </a>
-        <p>© 2026, Zhijie Xu</p>
+        <SocialLinks />
+        <CopyrightNotice />
       </footer>
-    </section>
+    </main>
   )
 }
 
