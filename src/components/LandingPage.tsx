@@ -17,8 +17,8 @@ function LandingPage() {
 
         <p className="landing-description">{profile.description}</p>
 
-        <button className="landing-button" type="button">
-          View Portfolio
+        <button className="landing-button" type="button" disabled>
+          Portfolio Coming Soon
         </button>
       </section>
 
