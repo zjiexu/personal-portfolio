@@ -1,7 +1,7 @@
 import { profile } from '../profile'
-import CopyrightNotice from './CopyrightNotice'
-import ProfileAvatar from './ProfileAvatar'
-import SocialLinks from './SocialLinks'
+import CopyrightNotice from '../components/CopyrightNotice'
+import ProfileAvatar from '../components/ProfileAvatar'
+import SocialLinks from '../components/SocialLinks'
 
 function LandingPage() {
   return (

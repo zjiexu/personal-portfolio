@@ -24,9 +24,11 @@ https://zjiexu.github.io/personal-portfolio/
 src/
   components/
     CopyrightNotice.tsx
-    LandingPage.tsx
     ProfileAvatar.tsx
     SocialLinks.tsx
+  pages/
+    LandingPage.tsx
+    PortfolioHome.tsx
   App.tsx
   App.css
   index.css
@@ -34,6 +36,8 @@ src/
   profile.ts
 ```
 
+- `src/pages/` contains page-level components.
+- `src/components/` contains reusable UI components.
 - `src/profile.ts` stores shared personal profile and social link data.
 
 ## Getting Started
