@@ -37,7 +37,7 @@ function App() {
 
       <div className="page-content">
         <PageBanner />
-        <IntroSection />
+        <IntroSection onNavigate={setPortfolioTitle} />
         <AboutSection />
         <ProjectsSection projects={projects} />
         <LearningSection areas={learningAreas} />

@@ -1,4 +1,8 @@
-function IntroSection() {
+type IntroSectionProps = {
+  onNavigate: (title: string) => void
+}
+
+function IntroSection({ onNavigate }: IntroSectionProps) {
   return (
     <section className="intro-section">
       <div className="intro-content">
@@ -11,10 +15,18 @@ function IntroSection() {
         </p>
 
         <div className="intro-actions">
-          <a className="button primary" href="#projects">
+          <a
+            className="button primary"
+            href="#projects"
+            onClick={() => onNavigate('Projects')}
+          >
             View Projects
           </a>
-          <a className="button secondary" href="#contact">
+          <a
+            className="button secondary"
+            href="#contact"
+            onClick={() => onNavigate('Contact')}
+          >
             Contact Me
           </a>
         </div>
