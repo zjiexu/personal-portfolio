@@ -23,12 +23,18 @@ https://zjiexu.github.io/personal-portfolio/
 ```text
 src/
   components/
+    CopyrightNotice.tsx
     LandingPage.tsx
+    ProfileAvatar.tsx
+    SocialLinks.tsx
   App.tsx
   App.css
   index.css
   main.tsx
+  profile.ts
 ```
+
+- `src/profile.ts` stores shared personal profile and social link data.
 
 ## Getting Started
 
