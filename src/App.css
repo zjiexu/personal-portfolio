@@ -137,7 +137,6 @@
 .portfolio-content {
   min-width: 0;
   height: 100vh;
-  padding: 64px;
   overflow-y: auto;
   background: #f4eee4;
   color: #11100d;
@@ -221,6 +220,68 @@
 
 .portfolio-sidebar-footer .social-links {
   gap: 14px;
+}
+
+.portfolio-page {
+  min-height: 100%;
+}
+
+.portfolio-hero {
+  min-height: 300px;
+  display: grid;
+  place-items: center;
+  padding: 64px;
+  text-align: center;
+  background:
+    linear-gradient(rgba(17, 16, 13, 0.42), rgba(17, 16, 13, 0.72)), #2a2620;
+  color: #f4eee4;
+}
+
+.portfolio-hero h1 {
+  margin: 0;
+  font-size: 3.8rem;
+  font-weight: 600;
+}
+
+.portfolio-hero p {
+  max-width: 900px;
+  margin: 18px 0 0;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.portfolio-page-body {
+  padding: 56px 72px 80px;
+  background: #f4eee4;
+}
+
+.portfolio-section {
+  max-width: 960px;
+  margin: 0 auto 48px;
+}
+
+.portfolio-section:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio-section h2 {
+  margin: 0 0 24px;
+  padding: 12px 18px;
+  background: #2a3947;
+  color: #f4eee4;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.portfolio-section p {
+  margin: 0 0 18px;
+  color: #11100d;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.portfolio-section p:last-child {
+  margin-bottom: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
