@@ -2,7 +2,9 @@
 
 ## Current Scope
 
-- Landing page only
+- Landing page
+- Routed portfolio area with fixed sidebar
+- Placeholder pages for home, skills, projects, and blog
 - Shared profile data
 - Reusable profile/avatar/social/copyright components
 
