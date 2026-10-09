@@ -1,11 +1,11 @@
 function PortfolioHome() {
   return (
-    <main>
-      <h1>Portfolio Home</h1>
+    <>
+      <h1>Home</h1>
       <p>
         This page will introduce my software development work, projects, and learning progress.
       </p>
-    </main>
+    </>
   )
 }
 

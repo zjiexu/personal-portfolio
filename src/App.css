@@ -117,15 +117,110 @@
   outline-offset: 4px;
 }
 
-.landing-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.78;
+.portfolio-shell {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  overflow: hidden;
 }
 
-.landing-button:disabled:hover {
-  background: #c9a968;
+.portfolio-sidebar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 28px 22px;
+  overflow: hidden;
+  background: #100f0d;
+  color: #f4eee4;
+}
+
+.portfolio-content {
+  min-width: 0;
+  height: 100vh;
+  padding: 64px;
+  overflow-y: auto;
+  background: #f4eee4;
+  color: #11100d;
+}
+
+.portfolio-sidebar-profile {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.portfolio-sidebar-profile .profile-avatar {
+  width: 104px;
+  height: 104px;
+  margin-bottom: 22px;
+  font-size: 1.35rem;
+}
+
+.portfolio-sidebar-profile h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.portfolio-sidebar-profile p {
+  margin: 10px 0 0;
+  color: #ded2c3;
+  font-size: 0.95rem;
+}
+
+.portfolio-sidebar-profile h2 {
+  margin: 28px 0 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.profile-avatar-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.profile-avatar-link:focus-visible {
+  outline: 2px solid #f0d98f;
+  outline-offset: 6px;
+}
+
+.portfolio-nav {
+  display: grid;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.portfolio-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid rgba(244, 238, 228, 0.22);
+  color: #f4eee4;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.portfolio-nav a.active {
   border-color: #c9a968;
-  transform: none;
+  background: rgba(201, 169, 104, 0.18);
+}
+
+.portfolio-nav a:hover {
+  border-color: #dfc27d;
+}
+
+.portfolio-sidebar-footer {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.portfolio-sidebar-footer .social-links {
+  gap: 14px;
 }
 
 @media (prefers-reduced-motion: reduce) {
