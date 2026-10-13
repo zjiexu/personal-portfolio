@@ -7,9 +7,9 @@ import { profile } from '../profile'
 
 const navLinks = [
   { label: 'Home', to: '/home' },
-  { label: 'Skills and Experience', to: '/skills' },
-  { label: 'Personal Projects', to: '/projects' },
-  { label: 'Tech Blog', to: '/blog' },
+  { label: 'Skills and Experience', to: '/skills-and-experience' },
+  { label: 'Personal Projects', to: '/personal-projects' },
+  { label: 'Tech Blog', to: '/tech-blog' },
 ]
 
 type PortfolioNavLinksProps = {

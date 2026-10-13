@@ -11,9 +11,9 @@ import './App.css'
 const pageTitles: Record<string, string> = {
   '/': 'Portfolio',
   '/home': 'Home',
-  '/skills': 'Skills',
-  '/projects': 'Projects',
-  '/blog': 'Blog',
+  '/skills-and-experience': 'Skills and Experience',
+  '/personal-projects': 'Personal Projects',
+  '/tech-blog': 'Tech Blog',
 }
 
 function App() {
@@ -31,9 +31,9 @@ function App() {
 
       <Route element={<PortfolioLayout />}>
         <Route path="/home" element={<PortfolioHome />} />
-        <Route path="/skills" element={<SkillsPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/skills-and-experience" element={<SkillsPage />} />
+        <Route path="/personal-projects" element={<ProjectsPage />} />
+        <Route path="/tech-blog" element={<BlogPage />} />
       </Route>
     </Routes>
   )
