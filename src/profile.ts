@@ -4,7 +4,7 @@ export const profile = {
   location: 'United States / Remote',
   role: 'Software Developer',
   description:
-    'I am building practical software projects while developing a strong foundation in frontend development, software engineering, and technical problem solving.',
+    'Building practical software through code, systems, and continuous learning',
 }
 
 export const socialLinks = [

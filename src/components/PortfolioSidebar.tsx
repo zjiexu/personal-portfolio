@@ -1,56 +1,93 @@
+import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import CopyrightNotice from './CopyrightNotice'
 import ProfileAvatar from './ProfileAvatar'
 import SocialLinks from './SocialLinks'
 import { profile } from '../profile'
 
-function PortfolioSidebar() {
+const navLinks = [
+  { label: 'Home', to: '/home' },
+  { label: 'Skills and Experience', to: '/skills' },
+  { label: 'Personal Projects', to: '/projects' },
+  { label: 'Tech Blog', to: '/blog' },
+]
+
+type PortfolioNavLinksProps = {
+  onNavigate?: () => void
+}
+
+function PortfolioNavLinks({ onNavigate }: PortfolioNavLinksProps) {
   return (
-    <aside className="portfolio-sidebar">
-      <div className="portfolio-sidebar-profile">
-        <Link className="profile-avatar-link" to="/" aria-label="Back to landing page">
+    <>
+      {navLinks.map((navLink) => (
+        <NavLink
+          className={({ isActive }) => (isActive ? 'active' : undefined)}
+          key={navLink.to}
+          onClick={onNavigate}
+          to={navLink.to}
+        >
+          {navLink.label}
+        </NavLink>
+      ))}
+    </>
+  )
+}
+
+function PortfolioSidebar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  return (
+    <>
+      <header className="portfolio-mobile-header">
+        <Link className="portfolio-mobile-brand" to="/">
           <ProfileAvatar />
+          <span>Portfolio | {profile.name}</span>
         </Link>
 
-        <h1>{profile.name}</h1>
+        <nav className="portfolio-top-nav" aria-label="Portfolio navigation">
+          <PortfolioNavLinks />
+        </nav>
 
-        <p>{profile.location}</p>
+        <button
+          aria-expanded={isMenuOpen}
+          aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          className="portfolio-menu-button"
+          type="button"
+          onClick={() => setIsMenuOpen((currentValue) => !currentValue)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </header>
 
-        <h2>{profile.role}</h2>
+      <div className={isMenuOpen ? 'portfolio-mobile-menu open' : 'portfolio-mobile-menu'}>
+        <nav className="portfolio-nav" aria-label="Portfolio navigation">
+          <PortfolioNavLinks onNavigate={() => setIsMenuOpen(false)} />
+        </nav>
       </div>
 
-      <nav className="portfolio-nav" aria-label="Portfolio navigation">
-        <NavLink
-          className={({ isActive }) => (isActive ? 'active' : undefined)}
-          to="/home"
-        >
-          Home
-        </NavLink>
-        <NavLink
-          className={({ isActive }) => (isActive ? 'active' : undefined)}
-          to="/skills"
-        >
-          Skills and Experience
-        </NavLink>
-        <NavLink
-          className={({ isActive }) => (isActive ? 'active' : undefined)}
-          to="/projects"
-        >
-          Personal Projects
-        </NavLink>
-        <NavLink
-          className={({ isActive }) => (isActive ? 'active' : undefined)}
-          to="/blog"
-        >
-          Tech Blog
-        </NavLink>
-      </nav>
+      <aside className="portfolio-sidebar">
+        <div className="portfolio-sidebar-profile">
+          <Link className="profile-avatar-link" to="/" aria-label="Back to landing page">
+            <ProfileAvatar />
+          </Link>
 
-      <div className="portfolio-sidebar-footer">
-        <SocialLinks />
-        <CopyrightNotice />
-      </div>
-    </aside>
+          <h1>{profile.name}</h1>
+          <p>{profile.location}</p>
+          <h2>{profile.role}</h2>
+        </div>
+
+        <nav className="portfolio-nav" aria-label="Portfolio navigation">
+          <PortfolioNavLinks />
+        </nav>
+
+        <div className="portfolio-sidebar-footer">
+          <SocialLinks />
+          <CopyrightNotice />
+        </div>
+      </aside>
+    </>
   )
 }
 

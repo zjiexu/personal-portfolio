@@ -3,45 +3,55 @@ function PortfolioHome() {
     <article className="portfolio-page">
       <header className="portfolio-hero">
         <h1>Portfolio</h1>
-        <p>
-          A growing collection of my software development projects, learning progress, and technical practice.
-        </p>
+        <p>Software development projects and technical growth</p>
       </header>
 
       <div className="portfolio-page-body">
         <section className="portfolio-section">
-          <h2>About Me</h2>
+          <h2>+ About Me +</h2>
 
           <p>
-            Hi, I am Zhijie. I am focused on growing as a software developer by building practical projects, studying core programming concepts, and improving how I structure frontend applications.
+            Hi, I am Zhijie. I am a computer science graduate building practical software projects to strengthen my software engineering skills.
           </p>
 
           <p>
-            This portfolio is part of that process. It gives me a place to present my work, document what I learn, and show my progress clearly as I continue developing stronger software engineering skills.
-          </p>
-        </section>
-
-        <section className="portfolio-section">
-          <h2>Current Focus</h2>
-
-          <p>
-            I am currently learning React, TypeScript, responsive design, routing, component structure, Git workflow, and deployment with GitHub Pages.
+            My background includes hands-on technical work with AI-powered robotic systems, customer deployments, troubleshooting, software tools, system maintenance, and technical documentation.
           </p>
 
           <p>
-            My goal is to build projects that are not only functional, but also organized, readable, and easy to keep improving over time.
+            I am now focused on applying that technical foundation to programming, application development, problem solving, and building reliable software projects.
           </p>
         </section>
 
         <section className="portfolio-section">
-          <h2>A Bit More About Me</h2>
+          <h2>+ Technical Background +</h2>
 
           <p>
-            I enjoy building step by step and learning through real implementation. I am especially interested in software engineering, frontend development, and creating clean user experiences.
+            I earned a Bachelor of Science in Computer Science from DePaul University, where I built a foundation in programming, databases, algorithms, data structures, object-oriented programming, and problem solving.
           </p>
 
           <p>
-            Outside of coding, I like games with strong atmosphere and design, especially Dark Souls. That influence is part of the visual direction for this portfolio: dark, minimal, focused, and deliberate.
+            In my technical role at RuTech Robotics, I supported AI-powered commercial robotic systems through deployment, configuration, testing, troubleshooting, software updates, firmware updates, and customer support.
+          </p>
+
+          <p>
+            This experience helped me develop practical skills in diagnosing technical issues, working with system tools, documenting procedures, and communicating technical information clearly.
+          </p>
+        </section>
+
+        <section className="portfolio-section">
+          <h2>+ A Bit More About Me +</h2>
+
+          <p>
+            I enjoy learning by building real projects and improving them step by step.
+          </p>
+
+          <p>
+            I am interested in how software connects interface design, system behavior, data, automation, and real-world problem solving.
+          </p>
+
+          <p>
+            Outside of coding, I enjoy video games and visual design with strong atmosphere. Those interests influence how I think about focus, mood, and interface style.
           </p>
         </section>
       </div>
