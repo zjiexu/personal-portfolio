@@ -8,7 +8,7 @@ This project currently contains a landing page and a routed portfolio area with 
 
 ## Live Site
 
-https://zjiexu.github.io/personal-portfolio/
+https://personal-portfolio-zjiexu.vercel.app/
 
 ## Tech Stack
 
@@ -16,8 +16,8 @@ https://zjiexu.github.io/personal-portfolio/
 - TypeScript
 - Vite
 - CSS
-- GitHub Pages
 - React Router
+- Vercel
 
 ## Project Structure
 
@@ -63,6 +63,4 @@ npm run build
 
 ## Deploy
 
-```bash
-npm run deploy
-```
+This project is deployed with Vercel. Every push to the main branch triggers a production deployment.
